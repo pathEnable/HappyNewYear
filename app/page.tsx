@@ -20,7 +20,7 @@ function VoeuxContent() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
   const shareUrl = useMemo(() => {
     try {
-      const url = new URL('/voeux', baseUrl);
+      const url = new URL("",baseUrl);
       if (displayName) {
         url.searchParams.set('name', displayName);
       }
