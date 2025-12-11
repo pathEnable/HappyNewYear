@@ -26,7 +26,7 @@ function VoeuxContent() {
       }
       return url.toString();
     } catch {
-      return `${baseUrl}/voeux`;
+      return `${baseUrl}`;
     }
   }, [baseUrl, displayName]);
 
